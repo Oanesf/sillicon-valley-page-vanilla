@@ -1,0 +1,164 @@
+.content-info {
+    width: 100%;
+    padding: 20px;
+    gap: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-who {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 15px;
+    background: #0c0c13;
+    border-radius: 20px;
+    box-shadow: 0px 7px 20px #464646;
+    transition: all .3s ease;
+}
+
+.content-who:hover {
+    transform: translate(7px);
+}
+
+.cont-mv {
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content-who h2 {
+    font-size: 1.9rem;
+    /* color: #fefefe; */
+    color: rgb(255, 167, 15);
+    font-weight: 400;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.content-who p {
+    font-size: 0.9rem;
+    color: #b7b7b7;
+    font-weight: 400;
+    padding: 0px 15px 25px 15px;
+    text-align: center;
+}
+
+.imgSVG {
+    width: 100px;
+}
+
+
+
+
+@media only screen and (min-width: 840px) {
+    .content-info {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .content-who {
+        width: 350px;
+        /* height: auto; */
+        min-height: 300px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-who h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-who p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+    .content-who {
+        width: 400px;
+        padding: 10px;
+    }
+
+    .content-who h2 {
+        font-size: 1.7rem;
+    }
+
+    .content-who p {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 1040px) {
+    .content-who {
+        width: 470px;
+        padding: 10px;
+    }
+
+    .content-who h2 {
+        font-size: 2rem;
+    }
+
+    .content-who p {
+        font-size: 1.3rem;
+    }
+}
+
+/* @media only screen and (min-width: 1240px) {
+    .content-who {
+        width: 350px;
+        padding: 10px;
+    }
+} */
+
+@media only screen and (max-width: 839px) {
+    .content-info {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-who {
+        width: 80%;
+        padding: 10px;
+    }
+
+
+    .cont-mv {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .tilte-mv {
+        padding: 15px;
+    }
+
+    .info-mv {
+        padding: 10px;
+
+    }
+
+    .imgSVG {
+        width: 90px;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    .content-who {
+        width: 92%;
+        padding: 10px;
+    }
+
+}

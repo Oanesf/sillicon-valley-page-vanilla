@@ -1,0 +1,11 @@
+.cont-pro-title {
+  background: #0d0d0d;
+  min-height: 40dvh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/collagemmm.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}

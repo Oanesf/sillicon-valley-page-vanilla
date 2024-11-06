@@ -1,0 +1,287 @@
+.cont-site-title {
+  background: #0d0d0d;
+  min-height: 40dvh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/salonTwo.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.cont-site {
+  padding: 30px 0;
+  width: 100%;
+  min-height: 60dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.cont-site h1 {
+  color: #4f4f4f;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cont-site h2 {
+  font-size: 1.7rem;
+  color: #565656;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cont-info-site {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cont-info-site img {
+  width: 300px;
+  height: 250px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.info-site {
+  width: 100%;
+  padding: 10px;
+}
+
+.info-site h3 {
+  font-size: 1.2rem;
+  color: rgb(85, 201, 203);
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  /* text-align: center; */
+}
+
+.info-site p {
+  padding: 0px 7px 15px 7px;
+  font-size: 0.9rem;
+  color: #575757;
+  font-weight: 400;
+}
+
+.cont-btn-site {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-site {
+  background-color: rgb(85, 201, 203);
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 10px;
+  /* border: 1px solid #3f6163; */
+  color: rgb(234, 255, 255);
+  font-size: 1.2rem;
+  box-shadow: 0px 5px 10px #4f4f4f;
+}
+
+
+@media only screen and (min-width: 250px) {
+  .cont-info-site img {
+    width: 270px;
+    height: 180px;
+    border-radius: 7px;
+  }
+
+  .info-site {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .cont-info-site img {
+    width: 340px;
+    height: 230px;
+    border-radius: 7px;
+  }
+
+  .info-site {
+    width: 340px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .cont-info-site img {
+    width: 390px;
+    height: 260px;
+    border-radius: 7px;
+  }
+
+  .info-site {
+    width: 390px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .cont-info-site img {
+    width: 410px;
+    height: 290px;
+  }
+
+  .info-site {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .cont-info-site img {
+    width: 510px;
+    height: 320px;
+  }
+
+  .info-site {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .cont-info-site img {
+    width: 600px;
+    height: 350px;
+  }
+
+  .info-site {
+    width: 600px;
+  }
+
+  .info-site p {
+    padding: 0px 7px 15px 7px;
+    font-size: 1rem;
+    color: #575757;
+    font-weight: 400;
+  }
+
+  .btn-site {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media only screen and (min-width: 750px) {
+  .cont-info-site img {
+    width: 700px;
+    height: 390px;
+  }
+
+  .info-site {
+    width: 700px;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .cont-site h1 {
+    font-size: 2.6rem;
+  }
+
+  .cont-site h2 {
+    font-size: 2.4rem;
+  }
+
+  .cont-site {
+    grid-column: auto;
+    gap: 1rem;
+  }
+
+  .cont-info-site {
+    display: flex;
+    align-items: center;
+  }
+
+  .cont-info-site:first-child {
+    flex-direction: row;
+  }
+
+  .cont-info-site:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .cont-info-site:nth-child(3) {
+    flex-direction: row;
+  }
+
+  .cont-info-site:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+
+  .cont-info-site:nth-child(5) {
+    flex-direction: row;
+  }
+
+  .cont-info-site:nth-child(6) {
+    flex-direction: row-reverse;
+  }
+
+  .cont-info-site:nth-child(7) {
+    flex-direction: row;
+  }
+
+  .cont-info-site:nth-child(8) {
+    flex-direction: row-reverse;
+  }
+
+  .cont-info-site img {
+    width: 50%;
+    height: 420px;
+  }
+
+  .info-site {
+    width: 50%;
+
+  }
+
+  .info-site h3 {
+    font-size: 2rem;
+  }
+
+  .info-site h3 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .info-site p {
+    font-size: 1.0rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .cont-info-site img {
+    width: 50%;
+    height: 480px;
+  }
+
+  .info-site p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .cont-info-site img {
+    width: 50%;
+    height: 540px;
+
+  }
+
+  .btn-site {
+    font-size: 1.8rem;
+  }
+
+}
