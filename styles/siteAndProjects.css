@@ -85,6 +85,14 @@
 
 }
 
+.info-site ul li {
+  padding: 0px 2px 10px 2px;
+  font-size: 0.9rem;
+  color: #575757;
+  font-weight: 400;
+
+}
+
 .info-site-center {
   width: 80%;
   padding: 10px;
@@ -193,6 +201,13 @@
     font-weight: 400;
   }
 
+  .info-site ul li {
+    padding: 0px 2px 10px 2px;
+    font-size: 1rem;
+    color: #575757;
+    font-weight: 400;
+  }
+
   .info-site-center p {
     padding: 0px 7px 15px 7px;
     font-size: 1rem;
@@ -292,6 +307,11 @@
     width: 100%;
   }
 
+  .info-site ul li {
+    font-size: 1.0rem;
+    width: 100%;
+  }
+
   .info-site-center p {
     font-size: 1.0rem;
     width: 100%;
@@ -305,6 +325,11 @@
   }
 
   .info-site p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .info-site ul li {
     font-size: 1.2rem;
     width: 100%;
   }
