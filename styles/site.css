@@ -1,8 +1,9 @@
 .cont-site-title {
   background: #0d0d0d;
-  min-height: 40dvh;
+  /* min-height: 40dvh; */
+  min-height: 300px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/salonTwo.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/sites/salonTwo.webp);
   background-size: cover;
   background-position: center;
   display: flex;

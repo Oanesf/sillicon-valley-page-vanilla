@@ -3,7 +3,18 @@ hamburger.onclick = function () {
   navBar = document.querySelector(".nav-bar");
   navBar.classList.toggle("active");
 };
-// _____
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger');
+  const navBar = document.getElementById('navBar');
+
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('active');
+    navBar.classList.toggle('active');
+  });
+});
+
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);

@@ -1,0 +1,119 @@
+.form-section {
+    padding: 120px 20px 50px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #f5f5f7; */
+    background: linear-gradient(90deg, #55c9cb78, #ffa60078);
+    min-height: 100vh;
+}
+
+.contact-form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+}
+
+.contact-form h2 {
+    color: #1d1d1f;
+    font-size: 32px;
+    margin: 0 0 20px;
+    font-weight: 600;
+}
+
+.form-line {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #55c9cb, #ffa500);
+    margin: 0 auto 20px;
+}
+
+.contact-form p {
+    font-size: 16px;
+    color: #86868b;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: #1d1d1f;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #d2d2d7;
+    font-size: 16px;
+    color: #1d1d1f;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #55c9cb;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.error {
+    color: #ff3b30;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+.submit-btn {
+    background: linear-gradient(90deg, #55c9cb, #ffa500);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #34c759;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 40px 30px;
+    }
+}

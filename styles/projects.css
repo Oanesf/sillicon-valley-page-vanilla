@@ -2,7 +2,7 @@
   background: #0d0d0d;
   min-height: 40dvh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/salonFour.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/sites/salonFour.webp);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -21,7 +21,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #000000b0;
 }
 
 .membre-title {

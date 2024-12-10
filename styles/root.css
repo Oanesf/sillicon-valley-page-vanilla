@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --bg-color-nav: #ffffff;
   --main-color: rgb(255, 160, 0);
   --text-color: #010101;
@@ -30,7 +30,7 @@
   --font-color-input-placeholder-form: #c0c0c0;
   --bg-color-btn-form: linear-gradient(90deg, rgb(0, 254, 148) 0%, rgb(77, 1, 254) 77%);
   --bg-color-btnh-form: linear-gradient(90deg, rgb(0, 176, 103) 0%, rgb(51, 0, 168) 77%);
-}
+} */
 
 * {
   margin: 0;
@@ -45,4 +45,31 @@
 p {
   line-height: 32px;
   line-height: 27px;
+}
+
+
+:root {
+  --primary-color: #55c9cb;
+  --secondary-color: #ffa500;
+  --text-color: #252525;
+  --bg-color: #ffffff;
+  --footer-bg-color: #1a1f2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

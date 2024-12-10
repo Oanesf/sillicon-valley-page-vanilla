@@ -1,0 +1,69 @@
+/* Estilos para la sección de graduados */
+.graduates-section {
+  padding: 2rem 2rem;
+  background-color: var(--bg-color);
+}
+
+.graduates-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.graduates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.graduate-card {
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.graduate-card:hover {
+  transform: translateY(-5px);
+}
+
+.graduate-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.graduate-name {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.graduate-company {
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .graduates-title {
+    font-size: 2rem;
+  }
+
+  .graduate-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .graduate-company {
+    width: 100px;
+  }
+}

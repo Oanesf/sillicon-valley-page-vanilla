@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="...">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Silicon Valley Zenith Hub">
+    <link rel="canonical" href="https://www.eee.com" />
+
+    <meta property="og:title" content="Formulario">
+    <meta property="og:description" content="Silicon Valley Zenith Hub">
+
+    <meta property="og:image" content="https://www.eeee.com/img/screen.webp">
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:alt" content="Silicon Valley Zenith Hub">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" href="img/icon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="128x128" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon.ico">
+    <link rel="icon" href="img/icon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Trispace:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/root.css" />
+    <!-- <link rel="stylesheet" href="../styles/welcome.css" /> -->
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+</head>
+
+<body>
+    <header>
+        <img class="logoimg" src="../assets/SVLogo.webp" alt="Silicon Valley Zenith Hub Logo" />
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="projects.html">Impulsate</a></li>
+                <li><a href="">Innovación</a></li>
+                <li><a href="site.html">Espacios</a></li>
+                <li><a href="contact.html" class="active">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <form id="contact-form" class="contact-form">
+                <h2>Contáctanos</h2>
+                <span class="form-line"></span>
+                <p>Estamos aquí para ayudarte. ¿En qué podemos asistirte hoy?</p>
+
+                <div class="form-group">
+                    <label for="firstName">Nombre</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Tu nombre" required>
+                    <span class="error" id="firstNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Tu apellido" required>
+                    <span class="error" id="lastNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Número telefónico</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+58 123 456 7890" required>
+                    <span class="error" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">País de origen</label>
+                    <select id="country" name="country" required>
+                        <option value="">Selecciona un país</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="CO">Colombia</option>
+                        <option value="US">Estados Unidos</option>
+                        <!-- Agregar más países según sea necesario -->
+                    </select>
+                    <span class="error" id="countryError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Nombre de la empresa (opcional)</label>
+                    <input type="text" id="company" name="company" placeholder="Tu empresa">
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Motivo de contacto</label>
+                    <textarea id="reason" name="reason" placeholder="¿En qué podemos ayudarte?" rows="4"
+                        required></textarea>
+                    <span class="error" id="reasonError"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar mensaje</button>
+                <div id="successMessage" class="success-message" style="display: none;">
+                    ¡Gracias por tu mensaje! Te contactaremos pronto.
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="../assets/SVLogo.webp" alt="Silicon Valley Zenith Hub Logo" class="footer-logo">
+                <p>Campus for Startups</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>ACERCA DE</h3>
+                <ul>
+                    <li><a href="#">Conéctemonos</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>SERVICIOS</h3>
+                <ul>
+                    <li><a href="#">Aceleración para Startups</a></li>
+                    <li><a href="#">Innovación para Empresas</a></li>
+                    <li><a href="#">Innovación para Grandes Corporaciones</a></li>
+                    <li><a href="#">Red de Inversionistas</a></li>
+                    <li><a href="#">Coworking</a></li>
+                    <li><a href="#">Soft Landing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>TALLERES Y EVENTOS</h3>
+                <ul>
+                    <li><a href="#">Monthly Pitch</a></li>
+                    <li><a href="#">Networking</a></li>
+                    <li><a href="#">Talleres y Eventos</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Silicon Valley Zenith Hub</p>
+        </div>
+
+        <a href="https://wa.me/+584242115456?text=Buenas%20tardes%20quiero%20preguntar%20sobre.."
+            class="whatsapp-button" target="_blank" aria-label="Contactar por WhatsApp">
+            <img src="../assets/svg/whatsapp.svg" alt="WhatsApp">
+        </a>
+    </footer>
+
+    <script src="../scripts/contact-form.js"></script>
+    <script src="../script/navbar.js"></script>
+</body>
+
+</html>

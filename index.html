@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>Silicon Valley Zenith Hub</title>
   <meta charset="UTF-8" />
-  <meta name="description" content="...">
-  <meta charset="UTF-8" />
-  <meta name="description" content="It is the best application to interact with characters">
-  <link rel="canonical" href="https://www.essentialloveapp.com" />
+  <meta name="description" content="Silicon Valley Zenith Hub">
+  <link rel="canonical" href="https://www.eeee.com" />
 
   <meta property="og:title" content="Silicon Valley Zenith Hub">
   <meta property="og:description" content="Silicon Valley Zenith Hub">
 
-  <meta property="og:image" content="https://oanesf.github.io/sillicon-valley-page-vanilla/assets/SVSala1.webp">
+  <meta property="og:image" content="https://www.eeee.com/assets/SVSala1.webp">
   <meta property="og:image:type" content="image/jpg" />
   <meta property="og:image:alt" content="Silicon Valley Zenith Hub">
 
@@ -33,28 +31,22 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/icon.ico">
   <link rel="icon" href="img/icon.ico" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Trispace:wght@100..800&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="styles/root.css" />
   <link rel="stylesheet" href="styles/navbar.css" />
   <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/graduates.css" />
+  <link rel="stylesheet" href="styles/programs.css" />
   <link rel="stylesheet" href="styles/welcome.css" />
-  <link rel="stylesheet" href="styles/siteAndProjects.css" />
-  <link rel="stylesheet" href="styles/btns.css" />
-  <link rel="stylesheet" href="styles/somos.css" />
+  <link rel="stylesheet" href="styles/site.css" />
   <link rel="stylesheet" href="styles/map.css" />
   <link rel="stylesheet" href="styles/footer.css" />
 </head>
-<!-- 
-  1 poner navbar, 
-  2 hacer que te lleve a los sitios, 
-  2.1 poner el contenido en los sitios 
-  3 mejorar esteticas, 
-  4 mejorar footer  
-  5 mejorar el js
-  6 refactor head e img
-  7 que funcione el btn de whatsapp 
-
-  8 crear la nueva parte de proyectos
-  -->
 
 <body>
   <header>
@@ -70,10 +62,16 @@
           <a class="active" href="../index.html">Inicio</a>
         </li>
         <li>
-          <a href="view/projects.html">Membresias</a>
+          <a href="view/projects.html">Impulsate</a>
+        </li>
+        <li>
+          <a href="view/innovation.html">Innovación</a>
         </li>
         <li>
           <a href="view/site.html">Espacios</a>
+        </li>
+        <li>
+          <a href="view/contact.html">Contáctanos</a>
         </li>
       </ul>
     </nav>
@@ -88,17 +86,66 @@
       </div>
     </section>
 
+    <!-- Sección de Programas -->
+    <section class="programs-section">
+      <h2 class="programs-title">¿Cuál es el programa para mi?</h2>
+      <div class="programs-grid">
+        <div class="program-card">
+          <img src="assets/illustration/ilius2.webp" alt="Idea de negocio" class="program-image">
+          <h3 class="program-title">¿Tienes una idea de negocio pero no sabes cómo estructurarla?</h3>
+          <a href="#" class="program-button">Acelera tu Startup</a>
+        </div>
+        <div class="program-card">
+          <img src="assets/illustration/ilus3.webp" alt="Empresa consolidada" class="program-image">
+          <h3 class="program-title">¿Tienes una empresa consolidada pero deseas innovar en tu modelo de negocio?</h3>
+          <a href="#" class="program-button">Innova en tu empresa</a>
+        </div>
+        <div class="program-card">
+          <img src="assets/illustration/ilus4.webp" alt="Gran corporación" class="program-image">
+          <h3 class="program-title">¿Eres una gran corporación o entidad gubernamental y deseas aumentar tu base de
+            clientes?</h3>
+          <a href="#" class="program-button">Innovación a la medida</a>
+        </div>
+        <div class="program-card">
+          <img src="assets/illustration/ilus5.webp" alt="Inversión" class="program-image">
+          <h3 class="program-title">¿Tienes recursos y deseas invertirlos en una Startup? ¿Estás buscando inversión para
+            escalar tu negocio?</h3>
+          <a href="#" class="program-button">Red de Inversionistas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Graduados -->
+    <section class="graduates-section">
+      <h2 class="graduates-title">CEO E INVERSIONISTAS</h2>
+      <div class="graduates-grid">
+        <div class="graduate-card">
+          <img src="assets/staff/bere.webp" alt="Beresith Rigal" class="graduate-image">
+          <h3 class="graduate-name">Beresith Rigal</h3>
+          <img src="assets/companies/SVLogo.webp" alt="empresas" class="graduate-company">
+        </div>
+        <div class="graduate-card">
+          <img src="assets/staff/ramon.webp" alt="Ramon Rodriguez" class="graduate-image">
+          <h3 class="graduate-name">Ramon Rodriguez</h3>
+          <img src="assets/companies/SVLogo.webp" alt="empresas" class="graduate-company">
+        </div>
+        <!-- Agregar más graduados siguiendo el mismo patrón -->
+      </div>
+    </section>
+
     <section class="cont-site">
       <h2>Nuestros Espacios</h2>
       <article class="cont-info-site hidden">
-        <img src="assets/salonFour.webp" alt="">
+        <img src="assets/sites/salonFour.webp" alt="">
         <div class="info-site">
           <p>Nuestros espacio de trabajo abierto están diseñado para fomentar la creatividad y la colaboración entre
             emprendedores.</p>
+          <p>En Silicon Valley promovemos el intercambio de ideas, la co-creación y el trabajo en equipo, generando un
+            entorno dinámico donde la innovación fluye de manera natural.</p>
         </div>
       </article>
       <article class="cont-info-site hidden">
-        <img src="assets/SVPasillo.webp" alt="">
+        <img src="assets/sites/SVPasillo.webp" alt="">
         <div class="info-site">
           <p>Este ambiente inspira a pensar de forma disruptiva y a encontrar soluciones creativas a los
             desafíos que enfrentan en sus proyectos. Participar en Nuestra aceleradora te garantiza numerosos beneficios
@@ -113,13 +160,6 @@
               <p>6. oportunidades de crecimiento.</p>
             </li>
           </ul>
-        </div>
-      </article>
-      <article class="cont-info-site hidden">
-        <img src="assets/SVSala2.webp" alt="">
-        <div class="info-site">
-          <p>En Silicon Valley promovemos el intercambio de ideas, la co-creación y el trabajo en equipo, generando un
-            entorno dinámico donde la innovación fluye de manera natural.</p>
         </div>
       </article>
       <article class="info-center hidden">
@@ -217,20 +257,6 @@
         </a>
       </div>
     </section>
-
-    <article class="content-info">
-      <div class="content-who hidden-x card-animation">
-        <h2 class="">Misión</h2>
-        <p class="">Crear un entorno que fomente la colaboración entre startups, emprendedores y profesionales
-          creativos, impulsando el desarrollo de ideas innovadoras y proyectos disructivos en Venezuela.</p>
-      </div>
-      <div class="content-who hidden-x card-animation">
-        <h2 class="">Visión</h2>
-        <p class="">Ser el espacio de innovación y transformación digital más importante de Venezuela, acelerando el
-          crecimiento de startups y emprendedores a través de la conexión, la innovación y la adopción de tecnologías
-          emergentes que faciliten la sinergia y las oportunidades de negocios.</p>
-      </div>
-    </article>
     <article class="content-map">
       <h2>Estamos Ubicados</h2>
       <iframe
@@ -238,18 +264,57 @@
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
   </main>
-  <footer>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/SVLogo.webp" alt="Silicon Valley Zenith Hub Logo" class="footer-logo">
+        <p>Campus for Startups</p>
+      </div>
 
-    <ul class="social-icons">
-      <li><a href="https://www.instagram.com/essentialloveapp?tum_source=qr" target="_blank" class="fa-brands"><img
-            src="assets/svg/insta.svg" alt="instagram icon image" /></a></li>
-    </ul>
-    <ul class="contact-box">
-      <li><a class="footer-element" href="tel:+58 4242115456" target="_blank">+58 414-2094996</a></li>
-    </ul>
-    <p class="footer-text">2024 | todos los derechos reservados</p>
-    <a href="https://wa.me/+584242115456?Buenas tardes quiero preguntar sobre.." class="Scroll-top" target="_blank">
-      <img src="assets/svg/whatsapp.svg" alt="whatsapp icon">
+      <div class="footer-section">
+        <h3>ACERCA DE</h3>
+        <ul>
+          <li><a href="#">Conéctemonos</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+          <!-- <li><a href="#">Política de Privacidad</a></li> -->
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>SERVICIOS</h3>
+        <ul>
+          <li><a href="#">Aceleración para Startups</a></li>
+          <li><a href="#">Innovación para Empresas</a></li>
+          <li><a href="#">Innovación para Grandes Corporaciones</a></li>
+          <li><a href="#">Red de Inversionistas</a></li>
+          <li><a href="#">Coworking</a></li>
+          <li><a href="#">Soft Landing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>TALLERES Y EVENTOS</h3>
+        <ul>
+          <li><a href="#">Monthly Pitch</a></li>
+          <li><a href="#">Networking</a></li>
+          <li><a href="#">Talleres y Eventos</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2024 Silicon Valley Zenith Hub</p>
+    </div>
+
+    <a href="https://wa.me/+584242115456?text=Buenas%20tardes%20quiero%20preguntar%20sobre.." class="whatsapp-button"
+      target="_blank" aria-label="Contactar por WhatsApp">
+      <img src="assets/svg/whatsapp.svg" alt="WhatsApp">
     </a>
   </footer>
   <script src="script/navbar.js"></script>
