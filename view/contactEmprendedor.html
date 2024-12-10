@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Formulario de Contactos</title>
+    <title>Formulario de Contacto para Emprendedore</title>
     <meta charset="UTF-8" />
     <meta name="description" content="...">
     <meta charset="UTF-8" />
@@ -40,7 +40,6 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/root.css" />
-    <!-- <link rel="stylesheet" href="../styles/welcome.css" /> -->
     <link rel="stylesheet" href="../styles/login.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
@@ -60,72 +59,86 @@
                 <li><a href="projects.html">Impulsate</a></li>
                 <li><a href="innovation.html">Innovación</a></li>
                 <li><a href="site.html">Espacios</a></li>
-                <li><a href="contact.html" class="active">Contáctanos</a></li>
+                <li><a href="contact.html">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="form-section">
-            <form id="contact-form" class="contact-form">
-                <h2>Contáctanos</h2>
-                <span class="form-line"></span>
-                <p>Estamos aquí para ayudarte. ¿En qué podemos asistirte hoy?</p>
+        <main>
+            <section class="form-section">
+                <form id="contact-form" class="contact-form">
+                    <h2>Si eres emprendedor</h2>
+                    <span class="form-line"></span>
+                    <!-- <p>Estamos aquí para ayudarte. ¿En qué podemos asistirte hoy?</p> -->
 
-                <div class="form-group">
-                    <label for="firstName">Nombre</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Tu nombre" required>
-                    <span class="error" id="firstNameError"></span>
-                </div>
+                    <div class="form-group">
+                        <label for="companyName">Nombre de la empresa</label>
+                        <input type="text" id="companyName" name="companyName" required>
+                        <span class="error" id="companyNameError"></span>
+                    </div>
 
-                <div class="form-group">
-                    <label for="lastName">Apellido</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Tu apellido" required>
-                    <span class="error" id="lastNameError"></span>
-                </div>
+                    <div class="form-group">
+                        <label for="representativeName">Nombre Representante de la Empresa</label>
+                        <input type="text" id="representativeName" name="representativeName" required>
+                        <span class="error" id="representativeNameError"></span>
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                    <span class="error" id="emailError"></span>
-                </div>
+                    <div class="form-group">
+                        <label for="representativeLastName">Apellido Representante de la Empresa</label>
+                        <input type="text" id="representativeLastName" name="representativeLastName" required>
+                        <span class="error" id="representativeLastNameError"></span>
+                    </div>
 
-                <div class="form-group">
-                    <label for="phone">Número telefónico</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+58 123 456 7890" required>
-                    <span class="error" id="phoneError"></span>
-                </div>
+                    <div class="form-group">
+                        <label for="phone">Número de teléfono</label>
+                        <div class="phone-input">
+                            <select id="countryCode" name="countryCode">
+                                <option value="VE">Venezuela</option>
+                                <!-- Agregar más opciones de países aquí -->
+                            </select>
+                            <input type="tel" id="phone" name="phone" placeholder="+58">
+                        </div>
+                        <span class="error" id="phoneError"></span>
+                    </div>
 
-                <div class="form-group">
-                    <label for="country">País de origen</label>
-                    <select id="country" name="country" required>
-                        <option value="">Selecciona un país</option>
-                        <option value="VE">Venezuela</option>
-                        <option value="CO">Colombia</option>
-                        <option value="US">Estados Unidos</option>
-                        <!-- Agregar más países según sea necesario -->
-                    </select>
-                    <span class="error" id="countryError"></span>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico de la persona</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
 
-                <div class="form-group">
-                    <label for="company">Nombre de la empresa (opcional)</label>
-                    <input type="text" id="company" name="company" placeholder="Tu empresa">
-                </div>
+                    <div class="form-group">
+                        <label for="linkedinProfiles">Links a los perfiles de LinkedIn de los Fundadores</label>
+                        <input type="text" id="linkedinProfiles" name="linkedinProfiles" required>
+                        <span class="error" id="linkedinProfilesError"></span>
+                    </div>
 
-                <div class="form-group">
-                    <label for="reason">Motivo de contacto</label>
-                    <textarea id="reason" name="reason" placeholder="¿En qué podemos ayudarte?" rows="4"
-                        required></textarea>
-                    <span class="error" id="reasonError"></span>
-                </div>
+                    <div class="form-group">
+                        <label for="investorDeck">Link al Investor Deck</label>
+                        <input type="url" id="investorDeck" name="investorDeck" required>
+                        <span class="error" id="investorDeckError"></span>
+                        <p class="form-note">En caso de no tener el documento indicado, compartir el link del One Page o
+                            Pitch Deck. Si no tienes alguno de estos documentos, escríbenos a nuestro <a
+                                href="https://wa.me/+584242115456" target="_blank">WhatsApp</a></p>
+                        <p class="form-note">Nota: Por favor, mantener acceso abierto al documento compartido</p>
+                    </div>
 
-                <button type="submit" class="submit-btn">Enviar mensaje</button>
-                <div id="successMessage" class="success-message" style="display: none;">
-                    ¡Gracias por tu mensaje! Te contactaremos pronto.
-                </div>
-            </form>
-        </section>
+                    <!-- <div class="form-group checkbox-group">
+                        <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                        <label for="termsAccepted">Confirmo que he leído y aceptado los <a href="#"
+                                target="_blank">Términos y Condiciones</a> *</label>
+                        <span class="error" id="termsAcceptedError"></span>
+                    </div> -->
+
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+                <div id="successMessage" class="success-message" style="display: none;"></div>
+            </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+        <link rel="stylesheet" href="styles/form-security.css">
+        <script src="../script/contact-empred-form.js"></script>
     </main>
 
     <footer class="footer">
@@ -184,7 +197,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
-    <script src="../scripts/contact-form.js"></script>
+    <script src="../script/contact-empred-form.js"></script>
     <script src="../script/navbar.js"></script>
 </body>
 

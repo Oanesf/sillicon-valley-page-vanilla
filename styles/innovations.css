@@ -15,14 +15,14 @@
 }
 
 .connect-image {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   height: auto;
   margin-bottom: 40px;
 }
 
 .connect-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
 }
@@ -112,7 +112,7 @@
 
 .preparation-image,
 .community-image {
-  max-width: 400px;
+  max-width: 280px;
   width: 100%;
   height: auto;
   border-radius: 20px;

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Formulario de Contactos</title>
+    <title>Formulario para Inversionistas</title>
     <meta charset="UTF-8" />
     <meta name="description" content="...">
     <meta charset="UTF-8" />
@@ -60,67 +60,86 @@
                 <li><a href="projects.html">Impulsate</a></li>
                 <li><a href="innovation.html">Innovación</a></li>
                 <li><a href="site.html">Espacios</a></li>
-                <li><a href="contact.html" class="active">Contáctanos</a></li>
+                <li><a href="contact.html">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="form-section">
-            <form id="contact-form" class="contact-form">
-                <h2>Contáctanos</h2>
+            <form id="investor-form" class="contact-form">
+                <h2>Si eres inversionista</h2>
                 <span class="form-line"></span>
-                <p>Estamos aquí para ayudarte. ¿En qué podemos asistirte hoy?</p>
+                <!-- <p>Estamos aquí para ayudarte. ¿En qué podemos asistirte hoy?</p> -->
 
                 <div class="form-group">
-                    <label for="firstName">Nombre</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Tu nombre" required>
-                    <span class="error" id="firstNameError"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="lastName">Apellido</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Tu apellido" required>
-                    <span class="error" id="lastNameError"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" required>
                     <span class="error" id="emailError"></span>
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Número telefónico</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+58 123 456 7890" required>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <span class="error" id="lastNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Número de teléfono</label>
+                    <div class="phone-input">
+                        <select id="countryCode" name="countryCode">
+                            <option value="VE">Venezuela</option>
+                            <option value="CO">Colombia</option>
+                            <option value="US">Estados Unidos</option>
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="+58" required>
+                    </div>
                     <span class="error" id="phoneError"></span>
                 </div>
 
                 <div class="form-group">
-                    <label for="country">País de origen</label>
-                    <select id="country" name="country" required>
-                        <option value="">Selecciona un país</option>
-                        <option value="VE">Venezuela</option>
-                        <option value="CO">Colombia</option>
-                        <option value="US">Estados Unidos</option>
-                        <!-- Agregar más países según sea necesario -->
+                    <label for="companyName">Nombre de la empresa o Fondo de Inversión</label>
+                    <input type="text" id="companyName" name="companyName">
+                    <span class="help-text">Entrada de cortesía para Fondos de inversión, Venture capital e
+                        inversionistas seriales</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedinProfile">Link al Perfil en LinkedIn y/o Website *</label>
+                    <input type="url" id="linkedinProfile" name="linkedinProfile" required>
+                    <span class="error" id="linkedinProfileError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="investmentSector">¿En que Sector / Industria te gustaría invertir? *</label>
+                    <textarea id="investmentSector" name="investmentSector" rows="4" required></textarea>
+                    <span class="error" id="investmentSectorError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="network">Red o comunidad a la que perteneces *</label>
+                    <select id="network" name="network" required>
+                        <option value="">Selecciona</option>
+                        <option value="angel">Red de Ángeles Inversionistas</option>
+                        <option value="vc">Venture Capital</option>
+                        <option value="private">Private Equity</option>
+                        <option value="other">Otra</option>
                     </select>
-                    <span class="error" id="countryError"></span>
+                    <span class="error" id="networkError"></span>
                 </div>
 
-                <div class="form-group">
-                    <label for="company">Nombre de la empresa (opcional)</label>
-                    <input type="text" id="company" name="company" placeholder="Tu empresa">
+                <div class="form-group" id="otherNetworkGroup" style="display: none;">
+                    <label for="otherNetwork">Si en la anterior pregunta respondiste "Otra", indícanos cuál</label>
+                    <input type="text" id="otherNetwork" name="otherNetwork">
                 </div>
 
-                <div class="form-group">
-                    <label for="reason">Motivo de contacto</label>
-                    <textarea id="reason" name="reason" placeholder="¿En qué podemos ayudarte?" rows="4"
-                        required></textarea>
-                    <span class="error" id="reasonError"></span>
-                </div>
-
-                <button type="submit" class="submit-btn">Enviar mensaje</button>
+                <button type="submit" class="submit-btn">Enviar</button>
                 <div id="successMessage" class="success-message" style="display: none;">
                     ¡Gracias por tu mensaje! Te contactaremos pronto.
                 </div>
@@ -184,7 +203,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
-    <script src="../scripts/contact-form.js"></script>
+    <script src="../scripts/investor-form-security.js"></script>
     <script src="../script/navbar.js"></script>
 </body>
 
