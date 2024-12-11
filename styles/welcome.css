@@ -19,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
+    margin-top: 50px;
 
 }
 
@@ -84,7 +85,8 @@ button {
     background: rgb(255, 160, 0);
     font-size: 22px;
     font-weight: 500;
-    color: #181818;
+    /* color: #181818; */
+    color: #f6f6f6;
     border: 3px solid rgb(255, 160, 0);
     border-radius: 8px;
     box-shadow: 0 0 0 #fec1958c;

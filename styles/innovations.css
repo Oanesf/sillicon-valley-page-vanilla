@@ -64,7 +64,9 @@
 .connect-button {
   display: inline-block;
   padding: 12px 24px;
-  background: #2ee3ff;
+  /* background: #2ee3ff; */
+  background: var(--primary-color);
+
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -72,7 +74,9 @@
 }
 
 .connect-button:hover {
-  background: #7e61ff;
+  /* background: #7e61ff; */
+  background: var(--secondary-color);
+
 }
 
 /* Estilos para la sección de inversión */
@@ -91,17 +95,19 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-bottom: 60px;
-  padding: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
   border-radius: 15px;
 }
 
 .preparation-block {
-  background: linear-gradient(135deg, #ff7e61, #ff6b6b);
+  background: linear-gradient(135deg, #4a90e2, #7e61ff);
+
 }
 
 .community-block {
-  background: linear-gradient(135deg, #4a90e2, #7e61ff);
+  background: linear-gradient(135deg, #ff7e61, #ff6b6b);
+
 }
 
 .preparation-content,

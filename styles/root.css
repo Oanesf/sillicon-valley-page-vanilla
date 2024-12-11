@@ -1,23 +1,10 @@
-/* :root {
-  --bg-color-nav: #ffffff;
-  --main-color: rgb(255, 160, 0);
-  --text-color: #010101;
-  --line-color-nav: #181818;
-  --Snd-color: #434343;
-  --other-color: #666666;
-  --big-font: 5rem;
-  --h2-font: 2.3rem;
-  --p-font: 1.3rem;
-  --black1: #e8e1e1;
-  --nav-bar-ul-li-a: #fff;
-  --nav-bar-ul-li-a-hover: #c2c2c2;
+:root {
+  --primary-color: #55c9cb;
+  --secondary-color: #ffa500;
+  --text-color: #252525;
+  --bg-color: #ffffff;
+  --footer-bg-color: #1a1f2d;
 
-  --bg-color-foot: #ffffff;
-  --text-color-title-foot: #474747;
-  --text-color-foot: #999999;
-  --bg-color-whatsapp: rgb(31, 230, 99);
-  --color-whatsapp: #fefefe;
-  --font-size-whatsapp: 1em;
 
   --bg-color-form-bg: #212121;
   --bg-color-form: #ffffff;
@@ -30,7 +17,7 @@
   --font-color-input-placeholder-form: #c0c0c0;
   --bg-color-btn-form: linear-gradient(90deg, rgb(0, 254, 148) 0%, rgb(77, 1, 254) 77%);
   --bg-color-btnh-form: linear-gradient(90deg, rgb(0, 176, 103) 0%, rgb(51, 0, 168) 77%);
-} */
+}
 
 * {
   margin: 0;
@@ -47,20 +34,6 @@ p {
   line-height: 27px;
 }
 
-
-:root {
-  --primary-color: #55c9cb;
-  --secondary-color: #ffa500;
-  --text-color: #252525;
-  --bg-color: #ffffff;
-  --footer-bg-color: #1a1f2d;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Noto Sans', sans-serif;

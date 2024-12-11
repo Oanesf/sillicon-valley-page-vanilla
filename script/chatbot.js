@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   chatbotToggle.addEventListener('click', function() {
       chatbot.classList.add('active');
-      addMessage('bot', '¡Hola! Soy el asistente virtual de Silicon Valley Zentith Hub. ¿En qué puedo ayudarte hoy?');
+      addMessage('bot', '¡Hola! Soy la asistente virtual de Silicon Valley Zentith Hub. ¿En qué puedo ayudarte hoy?');
   });
 
   chatbotClose.addEventListener('click', function() {

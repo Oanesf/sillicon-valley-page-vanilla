@@ -8,7 +8,8 @@
   text-align: center;
   color: var(--primary-color);
   font-size: 2rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
+  margin-bottom: 2rem;
   font-weight: 500;
 }
 
