@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="styles/site.css" />
   <link rel="stylesheet" href="styles/map.css" />
   <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/chatbot.css" />
 </head>
 
 <body>
@@ -257,6 +258,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.0376992350825!2d-66.84585046059057!3d10.49769436431644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a59b1f75ae1e5%3A0x124565c970e18c0a!2sParque%20Cristal%2C%20Avenida%20Francisco%20de%20Miranda%2C%20Caracas%201060%2C%20Miranda!5e0!3m2!1ses!2sve!4v1723835902220!5m2!1ses!2sve"
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
+
   </main>
   <footer class="footer">
     <div class="footer-container">
@@ -305,7 +307,27 @@
       <img src="assets/svg/whatsapp.svg" alt="WhatsApp">
     </a>
   </footer>
+
+  <div id="chatbot-container" class="chatbot-container">
+    <div id="chatbot-toggle" class="chatbot-toggle">
+      <img src="assets/illustration/ilusAsistente.webp" alt="">
+      <i class="fas fa-comments"></i>
+    </div>
+    <div id="chatbot" class="chatbot">
+      <div class="chatbot-header">
+        <h3>Asistente Virtual</h3>
+        <button id="chatbot-close" class="chatbot-close">&times;</button>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages"></div>
+      <form id="chatbot-form" class="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta aquí...">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
   <script src="script/navbar.js"></script>
+  <script src="script/chatbot.js"></script>
 </body>
 
 </html>
