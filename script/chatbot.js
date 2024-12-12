@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'bien', 'mal', 'mejor', 'peor', 'regular',
     'aqui', 'ahi', 'alli', 'alla', 'lejos', 'cerca',
     'arriba', 'abajo', 'encima', 'debajo', 'delante', 'detras',
-    'dentro', 'fuera', 'adentro', 'afuera'
+    'dentro', 'fuera', 'adentro', 'afuera', 
+    'silicon','valley', "zenith", 'hub', 'venezuela'
   ];
 
   // Cargar la base de conocimientos
@@ -163,6 +164,8 @@ document.addEventListener('DOMContentLoaded', function() {
       'startp': 'startup',
       'startap': 'startup',
       'start-up': 'startup',
+      'starup': 'startup',
+      'estarup': 'startup',
       'finanziacion': 'financiación',
       'financiacion': 'financiación',
       'finanziamiento': 'financiamiento',
@@ -272,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const relatedInfo = findRelatedInfo(userMessage, knowledgeBase);
       
       if (relatedInfo.length > 0) {
-        addMessage('bot', "No encontré una respuesta exacta, pero aquí hay información relacionada que podría ser útil:");
+        addMessage('bot', "No encontré una respuesta exacta, puedes contactarnos por WhatsApp o Instagram para más información, pero aquí hay información relacionada que podría ser útil:");
         relatedInfo.forEach(info => {
           addMessage('bot', `${info.question}: ${info.answer}`);
         });
@@ -308,9 +311,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function handleUnknownQuery(userMessage) {
     const genericResponses = [
-      "Lo siento, no tengo información específica sobre eso. ¿Puedes reformular tu pregunta o preguntar sobre otro tema?",
+      "Lo siento, no tengo información específica sobre eso, puedes contactarnos por WhatsApp o Instagram para más información. ¿Puedes reformular tu pregunta o preguntar sobre otro tema?",
       "No estoy seguro de cómo responder a eso. ¿Hay algo más en lo que pueda ayudarte?",
-      "Esa es una pregunta interesante, pero no tengo una respuesta precisa. ¿Quieres saber sobre algún otro tema relacionado con startups o tecnología?"
+      "Esa es una pregunta interesante, pero no tengo una respuesta precisa, puedes contactarnos por WhatsApp o Instagram para más información. ¿Quieres saber sobre algún otro tema relacionado con startups o tecnología?"
     ];
 
     const response = genericResponses[Math.floor(Math.random() * genericResponses.length)];
