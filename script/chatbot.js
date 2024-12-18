@@ -443,7 +443,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function handleUnknownQuery(userMessage) {
     const genericResponses = [
       "Lo siento, no tengo información específica sobre eso, puedes contactarnos por WhatsApp o Instagram para más información. ¿Puedes reformular tu pregunta o preguntar sobre otro tema?",
-      "No estoy seguro de cómo responder a eso. ¿Hay algo más en lo que pueda ayudarte?",
+      "No estoy seguro de cómo responder a eso, puedes contactarnos por WhatsApp o Instagram para más información. ¿Hay algo más en lo que pueda ayudarte?",
       "Esa es una pregunta interesante, pero no tengo una respuesta precisa, puedes contactarnos por WhatsApp o Instagram para más información. ¿Quieres saber sobre algún otro tema relacionado con startups o tecnología?"
     ];
 
@@ -489,4 +489,3 @@ document.addEventListener('DOMContentLoaded', function() {
     return Array.from(additionalInfo).slice(0, 2); // Limitar a 2 piezas de información adicional
   }
 });
-

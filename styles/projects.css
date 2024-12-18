@@ -1,142 +1,156 @@
-.cont-pro-title {
-  background: #0d0d0d;
-  min-height: 40dvh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/sites/salonFour.webp);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  padding: 20px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
 
 }
 
+.linearGradient {
+  background: linear-gradient(135deg, #2ee3ff, #7e61ff, rgb(255, 160, 0));
+  background: linear-gradient(90deg, #55c9cb78, #ffa60078);
 
-.cont-membre {
-  padding: 30px 10px;
-  width: 100%;
-  min-height: 60dvh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 
-.membre-title {
-  width: 100%;
-  margin-bottom: 5px;
-  text-align: center;
+.color2 {
+  color: #fff;
 }
 
-.membre-title h2 {
-  text-align: center;
-  font-size: 1.7rem;
-  color: rgb(85, 201, 203);
-  color: #333;
+.achievements-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  text-decoration: none;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.notification {
+.achievements-button:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.achievements-section,
+.experts-section {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.content-wrapper {
   display: flex;
-  flex-direction: column;
-  isolation: isolate;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.benefits-list {
+  flex: 1;
+  min-width: 300px;
+}
+
+.benefits-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
   position: relative;
-  width: 24rem;
-  min-height: 350px;
-  background: #29292c;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.benefits-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #55c9cb;
+}
+
+.section-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.experts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.expert-card {
+  background: #fff;
   border-radius: 1rem;
   overflow: hidden;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 16px;
-  padding-bottom: 20px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  --gradient: linear-gradient(to bottom, #2ee3ff, #7e61ff, rgb(255, 160, 0));
-  --color: rgb(255, 160, 0)
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.notification:before {
-  position: absolute;
-  content: "";
-  inset: 0.0625rem;
-  border-radius: 0.9375rem;
-  background: #18181b;
-  z-index: 2
+.expert-card:hover {
+  transform: translateY(-5px);
 }
 
-.notification:after {
-  position: absolute;
-  content: "";
-  width: 0.25rem;
-  inset: 0.65rem auto 0.65rem 0.5rem;
-  border-radius: 0.125rem;
-  background: var(--gradient);
-  transition: transform 300ms ease;
-  z-index: 4;
+.expert-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.notification:hover:after {
-  transform: translateX(0.15rem)
+.expert-card h3 {
+  padding: 1rem;
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
 }
 
-.notititle {
-  color: var(--color);
-  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
-  font-weight: 500;
-  font-size: 1.3rem;
-  transition: transform 300ms ease;
-  z-index: 5;
-}
-
-.notification:hover .notititle {
-  transform: translateX(0.15rem)
-}
-
-.notibody {
-  color: #99999d;
-  padding: 0 1.25rem;
-  transition: transform 300ms ease;
-  z-index: 5;
-}
-
-.notification:hover .notibody {
-  transform: translateX(0.25rem)
-}
-
-.notiglow,
-.notiborderglow {
-  position: absolute;
-  width: 20rem;
-  height: 20rem;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(circle closest-side at center, white, transparent);
-  opacity: 0;
-  transition: opacity 300ms ease;
-}
-
-.notiglow {
-  z-index: 3;
-}
-
-.notiborderglow {
-  z-index: 1;
-}
-
-.notification:hover .notiglow {
-  opacity: 0.1
-}
-
-.notification:hover .notiborderglow {
-  opacity: 0.1
-}
-
-.note {
-  color: var(--color);
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+.expert-card p {
+  padding: 0 1rem 1rem;
+  margin: 0;
+  color: #666;
   font-size: 0.9rem;
-  width: 75%;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .benefits-list li {
+    font-size: 1rem;
+  }
 }
